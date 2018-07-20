@@ -60,9 +60,6 @@ resource "aws_api_gateway_method" "hello" {
 
 #              POST
 # API Gateway ------> Lambda
-# For Lambda the method is always POST and the type is always AWS_PROXY.
-#
-# The date 2015-03-31 in the URI is just the version of AWS Lambda.
 resource "aws_api_gateway_integration" "hello" {
   rest_api_id = "${aws_api_gateway_rest_api.hello.id}"
   resource_id = "${aws_api_gateway_resource.hello.id}"
