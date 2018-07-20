@@ -1,6 +1,8 @@
 # Getting a basic Terraform Lambda going
 
-Commands: <br/ >
+Commands: 
+
+
 GOOS=linux GOARCH=amd64 go build -o hello <br/ >
 zip hello.zip hello <br/ >
 terraform apply <br/ >
