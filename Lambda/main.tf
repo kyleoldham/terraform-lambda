@@ -1,6 +1,13 @@
 data "aws_region" "current" {
 }
 
+# This'll allow you to zip up a directory
+#data "archive_file" zip {
+#  type        = "zip"
+#  source_dir  = "."
+#  output_path = "hello.zip"
+#}
+
 # Handler is the name of the go executable.
 resource "aws_lambda_function" "hello" {
   function_name = "hello"
